@@ -1,0 +1,12 @@
+name: 🪿
+
+on:
+  workflow_run:
+    workflows: ["🔍"]
+    types: ["completed"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests"
