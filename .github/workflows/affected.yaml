@@ -1,0 +1,13 @@
+name: 🔍
+
+on:
+  push:
+    branches: main
+  pull_request:
+
+jobs:
+  affected:
+    name: Finding affected tests
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Success!"
