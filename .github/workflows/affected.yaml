@@ -16,7 +16,7 @@ jobs:
           retries: 3
           script: |
             github.rest.checks.create({
-              owner: "davidcavazos",
+              owner: "tao-language",
               repo: "github-actions-experiment",
               name: "my-check",
               head_sha: "085a6bdd7e225030fda7664ebcbae282d477b36f",
