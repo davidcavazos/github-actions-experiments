@@ -10,4 +10,15 @@ jobs:
     name: Finding affected tests
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          retries: 3
+          script: |
+            github.rest.checks.create({
+              owner: "davidcavazos",
+              repo: "github-actions-experiment",
+              name: "my-check",
+              head_sha: "085a6bdd7e225030fda7664ebcbae282d477b36f",
+            })
       - run: echo "Success!"
