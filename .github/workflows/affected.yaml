@@ -9,6 +9,8 @@ jobs:
   affected:
     name: Finding affected tests
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
     steps:
       - uses: actions/github-script@v7
         with:
