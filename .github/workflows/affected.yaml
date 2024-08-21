@@ -14,6 +14,7 @@ jobs:
     # contents: read
     # pull-requests: write
     steps:
+      - run: gh auth status
       - name: Create check
         # For more information:
         #   https://www.kenmuse.com/blog/creating-github-checks
