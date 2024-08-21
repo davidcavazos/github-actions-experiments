@@ -9,10 +9,10 @@ jobs:
   affected:
     name: Finding affected tests
     runs-on: ubuntu-latest
-    permissions:
-      checks: write
-      contents: read
-      pull-requests: write
+    permissions: write-all
+    # checks: write
+    # contents: read
+    # pull-requests: write
     steps:
       - name: Create check
         # For more information:
